@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1 class="jumbotron center">Conversions</h1>
+    
+        <div id="content">
+            <form class="border border-light p-5">
+                <div class="form-group">
+                    <h2>Temperature Conversion</h2>
+                    <div class="form-row">
+                        <div class="col">
+                            Temp in Fahrenheit: <br>
+                            <input type="text" id="tempF" class="tempInput">&#176;F
+                        </div>
+                        <div class="col">
+                            Temp in Celsius: <br>
+                            <input type="text" id="tempC" class="tempInput">&#176;C
+                        </div>
+                    </div>
+                    <div id="q1_feedback">
+                        <br>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Please enter a number</strong> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <h2>Liquid Conversion</h2>
+                    <div class="form-row">
+                        <div class="col">
+                            To Convert: <br><input type="text" id="liquidIn" class="liquidInput">
+                            <select id="liquidMeasures">
+                                <option>Cup</option>
+                                <option>Ounce</option>
+                                <option>Liter</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="col">
+                            <div>Converted: <br></div>
+                            <div id="liquidOut"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <button id="liquidButton" type="button" class="btn btn-primary">Convert</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <h2>Distance Conversion</h2>
+                    <div class="form-row">
+                        <div class="col">
+                            To Convert:<br><input type="text" id="distanceIn" class="distanceInput"><br>
+                            <input type="radio" name="distance" id="mi" value="mi" checked><label for="mi">&nbspMile(s)</label>
+                            <input type="radio" name="distance" id="km" value="km"><label for="km">&nbspKilometer(s)</label>
+                        </div>
+                        <div class="col">
+                            <div>Converted: </div>
+                            <div id="distanceOut"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <button id="distanceButton" type="button" class="btn btn-primary">Convert</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>        
+<script SRC = "js/functions.js"></script>
+
+</body>
+
+</html>

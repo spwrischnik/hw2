@@ -1,0 +1,109 @@
+body 
+{
+    background-color: green;
+    text-align: center;
+}
+
+form 
+{
+    background-color: lightgray;
+    border: 5px solid black;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]:focus, textarea:focus 
+{
+  background-color: #FAF6F4;
+}
+
+.jumbotron 
+{
+    background-color: #281A2A;
+    color: white;
+}
+
+.correct 
+{
+    color: green;
+    font-size: 18pt;
+    
+}
+
+.incorrect 
+{
+    color: red;
+    font-size: 18pt;
+}
+
+.center 
+{
+	text-align: center;
+}
+
+#content 
+{
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#q1_feedback 
+{
+    display: none;
+}
+
+.footer 
+{
+	text-align: center;
+	font-size: 10pt;
+	margin: 40px;
+}
+.form-group
+{
+    background-color: lightgray;
+}
+.form-row
+{
+    background-color: gray;
+}
+.col
+{
+    background-color: lightblue;
+}
+
+#container 
+{
+    display: flex;
+}
+
+#inline 
+{
+    display: inline;
+}
+
+#textIn 
+{
+    width: 100%;
+    height: 200px;
+}
+
+.tempInput 
+{
+    width: 50%;
+}
+
+.liquidInput 
+{
+    width: 30%;
+}
+
+#liquidMeasures 
+{
+    display: inline;
+}
+#liquidIn 
+{
+    display: inline;
+}
